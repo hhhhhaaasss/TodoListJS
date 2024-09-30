@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #43cec5;
+  background: -moz-linear-gradient(top, #43cec5 0%, #172bc5 100%);
+  background: -webkit-linear-gradient(top, #43cec5 0%, #172bc5 100%);
+  background: linear-gradient(to bottom, #43cec5 0%, #172bc5 100%);
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.todoBox {
+  background-color: #f1f2eb;
+  border: 1em solid #f1f2eb;
+  border-radius: 20px;
+  box-shadow: 0px 1px 20px 5px #000;
+  place-self: center;
+  width: 18em;
+}
+
+.todoH1 {
+  margin-bottom: 4px;
+}
+
+.addList {
+  border: 2px;
+  border-radius: 25px;
+  background: #d8dad3;
+  padding: 12px;
+  display: flex;
+  position: relative;
+}
+
+.addInput {
+  border: none;
+  background-color: #d8dad3;
+  padding-left: 5px;
+}
+
+/* IF NEEDED TO MAKE A CHILD ELEMENTS BACKGROUND EXTEND TO THE PARENT USE THIS */
+.addButton {
+  border: 2px solid rgb(253, 134, 0);
+  border-radius: 25px;
+  margin-left: auto 0;
+  padding: 0px 30px 0px 30px;
+  display: block;
+  background-color: rgb(253, 134, 0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.addButton:hover {
+  background-color: red;
+  border-color: red;
+  cursor: pointer;
+}
+
+.list {
+  padding: 10px 0 10px 6px;
+  display: grid;
+
+  gap: 15px;
+  list-style-type: none;
+}
+
+.text {
+  grid-column-start: 2;
+}
+
+.close {
+  border: 0;
+  font-size: 12px;
+  background-color: #d8dad3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  grid-column-start: 3;
+  margin-left: auto;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.verify {
+  width: 20px;
+  grid-column-start: 0;
+}
