@@ -41,5 +41,3 @@ function handleSubmit() {
     close.remove();
   });
 }
-//!!Do the Text thingy
-//text-decoration:line-through
